@@ -1,18 +1,20 @@
 #include "main.h"
+
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
+ * main - prints _putchar, followed by a new line.
+ * Return: 0
+**/
+
 int main(void)
 {
-	char *sh = "putchar";
+	unsigned int i;
+	char c[] = "_putchar";
 
-	while (*sh)
+	for (i = 0; i <= 7; i++)
 	{
-		_putchar(*sh);
-		sh++;
+		_putchar(c[i]);
 	}
+
 	_putchar('\n');
 
 	return (0);
